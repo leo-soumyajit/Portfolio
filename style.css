@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800;900&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --bg-color:#2a2a2a;
+    --second-bg-color: #202020;
+    --text-color:#fff;
+    --second-color:#ccc;
+    --main-color:#05b4ff;
+    --big-font:5rem;
+    --h2-font:3rem;
+    --p-font:1.1rem;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    background-color: #2b2b2b;
+    position:relative;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+}
+.logo{
+    color: var(--text-color);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+span{
+    color: var(--main-color);
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    font-weight: 500;
+    color: var(--second-color);
+    font-size: 17px;
+    transition: all .45s ease;
+    margin: 0 25px;
+}
+.navlist a:hover{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 35px;
+    z-index: 1000;
+    color: var(--text-color);
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+section{
+    padding: 160px 15% 120px;
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image:url(Images/background.jpg) ; 
+    background-color: #202020;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+} 
+
+ .home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #202020;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+} 
+
+
+
+.navlist a.active{
+    color: var(--main-color);
+}
+.slide{
+    margin-bottom: 20px;
+}
+.one{
+    display: inline-block;
+    margin-right:15px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px ;
+    color: var(--text-color);
+    background-color: var(--main-color);
+}
+.two{
+    display: inline-block;
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+.home-text h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.1;
+    margin: 0 0 8px;
+    margin-bottom: 20px;
+}
+.home-text h3{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.1;
+    
+    margin: 0 0 35px;
+}
+.home-text p{
+    
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+.button {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Basic button styling */
+
+
+#marksheet{
+    background-color: #06ff17;
+    padding: 4px 7px;
+    margin-top: 7px;
+    font-size: 0.8rem;
+    color: #000000;
+}
+#marksheet:hover {
+    background: var(--hover-color, #06ff17); /* Darker background color on hover */
+    color: var(--hover-text-color, #000000); /* Change text color on hover */
+    box-shadow: 0 0 12px 6px rgba(13, 224, 37, 0.8), 0 4px 8px rgba(0, 0, 0, 0.2); /* Glow and subtle shadow */
+    transform: scale(1.02); /* Slightly enlarge the button */
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px; /* Add more padding for a better button size */
+    color: var(--text-color); /* Text color */
+    background: var(--main-color); /* Background color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    letter-spacing: 1px; /* Spacing between letters */
+    font-weight: 500; /* Font weight */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline from the link */
+    transition: all 0.45s ease; /* Smooth transition for all effects */
+    margin-bottom: 25px; /* Margin below the button */
+}
+
+/* Hover effect for the button */
+.btn:hover {
+    background: var(--hover-color, #06c9ff); /* Darker background color on hover */
+    color: var(--hover-text-color, #000000); /* Change text color on hover */
+    box-shadow: 0 0 12px 6px rgba(0, 217, 255, 0.8), 0 4px 8px rgba(0, 0, 0, 0.2); /* Glow and subtle shadow */
+    transform: scale(1.02); /* Slightly enlarge the button */
+}
+
+.about{
+    display: grid;
+    gap: 1.5rem;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+.about-img img{
+    max-width: 530px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    
+}
+/* .photo{
+    display: flex;
+    height: 600px;
+    width: 500px;
+   
+} */
+
+.photo {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: box-shadow 0.4s ease;
+    width: 150px; /* Set a smaller width */
+    height: 150px; /* Set a smaller height */
+}
+.photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.photo:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 0, 255, 0.6);
+    filter: brightness(1.1);
+}
+
+
+.about-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.about-text h4{
+    font-size: 24px;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.about-text p{
+    text-align: justify;
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+
+}
+#Email{
+    color: #ffffff;
+
+}
+#Place{
+    color: #ffffff;
+}
+#resume{
+    margin-right: 10px;
+}
+.services{
+    color: var(--second-bg-color);
+    background-color: rgba(28, 27, 27, 0.875);
+}
+.main-text{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.main-text p{
+    color: var(--second-color);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.main-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.services-content{
+    display: grid;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+    grid-template-columns: repeat(auto-fit,minmax(250px , auto));
+}
+
+.box {
+    text-align: justify;
+    background: var(--bg-color);
+    padding: 35px 45px;
+    border-radius: 8px;
+    background-color: rgb(41, 40, 40);
+    border: 5px solid transparent; /* Transparent border to start */
+    animation: borderGlow 3s infinite linear; /* Border animation */
+}
+
+@keyframes borderGlow {
+    0% {
+        border-color: rgba(255, 0, 0, 0.8); /* Red */
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    }
+    33% {
+        border-color: rgba(0, 255, 0, 0.8); /* Green */
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+    }
+    66% {
+        border-color: rgba(0, 0, 255, 0.8); /* Blue */
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.8);
+    }
+    100% {
+        border-color: rgba(255, 0, 0, 0.8); /* Back to Red */
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    }
+}
+.s-icons i{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.box h3{
+    font-size: 24px;
+    color:#05b4ff;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.box p{
+    color: var(--second-color);
+    margin-bottom: 25px;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+.box :hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.social-icon {
+    display: flex;
+    gap: 10px;
+}
+
+/* Style for each icon */
+.social-icon .icon {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease; /* Medium speed */
+}
+
+/* Remove the default border */
+.social-icon .icon a {
+    display: block;
+}
+
+/* Style for the icons */
+.social-icon .icon img {
+    display: block;
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    transition: filter 0.3s ease; /* Medium speed */
+}
+
+/* Yellow background and subtle glow effect on hover */
+.social-icon .icon:hover {
+    background-color: rgb(0, 247, 255); /* Full yellow background on hover */
+    box-shadow: 0 0 10px 5px rgba(89, 249, 255, 0.6); /* Subtle yellow glow */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Ensure icon stays visible against the yellow background */
+.social-icon .icon:hover img {
+    
+    filter: brightness(0) invert(1); /* Invert the icon color to be visible against the yellow background */
+}
+
+/*  
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #05b4ff;
+    width: 20%;
+    height: 20%;
+}
+
+.box2 h4{
+    font-size: 24px;
+    color:#05b4ff;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.box2 img{
+    width: 10%;
+    height: auto;
+}
+.skill-content{
+    display: grid;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(250px , auto));
+}
+.skill-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.skills-section {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.skill {
+    margin-top: 25PX;
+    text-align: center;
+    padding: 10px;
+    background-color: #20211c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.885);
+    width: 150px;
+    height: auto;
+    color: #ffffff;
+}
+.skill:hover {
+    transform: scale(1.1);
+    background-color: #191818;
+    box-shadow: 0 8px 16px rgb(16, 243, 255);
+}
+.skill img {
+    
+    width: 80px;
+    height: 80px;
+    object-fit:cover;
+    margin-bottom: 10px;
+}
+
+
+.skill p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+#skill-text{
+    margin-bottom: 30px;
+}
+/* TEXT ANIMATION */
+
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper .static-txt {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.wrapper .dynamic-txts {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txts li {
+    list-style: none;
+    color: #ffffff00;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.8), 0 0 20px rgba(252, 109, 109, 0);
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #ffffff00;
+    border-left: 2px solid #00d9ff;
+    animation: typing 3s steps(20) infinite;
+}
+
+@keyframes typing {
+    40%, 60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.Education{
+    background: #1e1d1d;
+}
+.education-section {
+    display: flex; /* Corrected for proper layout handling */
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.edu {
+    justify-content: center;
+    margin-top: 25px; /* Fixed capitalization */
+    text-align: center;
+    padding: 10px;
+    background-color: #252524;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.885);
+    width: 100%;
+    height: 520px;
+    color: #ffffff;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.edu:hover {
+    box-shadow: 0 0 15px rgb(0, 255, 234), 0 0 30px rgb(1, 251, 255); /* Glowing effect */
+    transform: scale(1.03); /* Slightly scale up the element */
+
+    background-color: #2a2925; /* Subtle background color change */
+}
+
+/* .edu:hover h1 {
+    color: #ffcc00; 
+}
+
+.edu:hover h2 {
+    color: #ff6600; 
+}
+
+.edu:hover h3 {
+    color: #ff9999; 
+} */
+
+.edu:hover p {
+    color: #ffffff; /* Change color of p on hover */
+}
+
+.edu img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.edu p {
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.edu h2 {
+    margin: 0;
+    color: #00d9ff;
+}
+
+.edu h3 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.edu h1 {
+    margin: 0;
+    color: #ffffff;
+}
