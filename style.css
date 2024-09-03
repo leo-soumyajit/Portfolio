@@ -61,6 +61,73 @@ span{
 .navlist a:hover{
     color: var(--main-color);
 }
+/* nav bar css */
+
+
+.navbar a{
+    font-weight: 500;
+    color: var(--second-color);
+    font-size: 17px;
+    transition: all .45s ease;
+    margin: 0 25px;
+}
+
+
+ul.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    background-color: #33333300; /* Background color of navbar */
+}
+
+ul.navbar li {
+    margin: 0;
+}
+
+/* Navigation links styling */
+ul.navbar a {
+    display: inline-block;
+    padding: 15px 20px;
+    color: #f1f1f1; /* Light text color */
+    text-decoration: none;
+    font-size: 18px;
+    position: relative; /* For pseudo-elements */
+    transition: color 0.4s ease, text-shadow 0.4s ease, transform 0.4s ease;
+}
+
+/* Active link style */
+ul.navbar a.active {
+    color: #0ff; /* Cyan color for active link */
+}
+
+/* Hover effects */
+ul.navbar a:hover {
+    color: #fff; /* White text color on hover */
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6);
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+/* Glowing border effect */
+ul.navbar a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.8), rgba(0, 255, 255, 0));
+    transition: width 0.4s ease;
+}
+
+/* Expand glowing border effect on hover */
+ul.navbar a:hover::before {
+    width: 100%;
+}
+
+
+
 #menu-icon{
     font-size: 35px;
     z-index: 1000;
@@ -167,28 +234,88 @@ section{
     transform: scale(1.02); /* Slightly enlarge the button */
 }
 
-.btn {
+/* .btn {
     display: inline-block;
-    padding: 12px 24px; /* Add more padding for a better button size */
-    color: var(--text-color); /* Text color */
-    background: var(--main-color); /* Background color */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 1rem; /* Font size */
-    letter-spacing: 1px; /* Spacing between letters */
-    font-weight: 500; /* Font weight */
-    text-align: center; /* Center text */
-    text-decoration: none; /* Remove underline from the link */
-    transition: all 0.45s ease; /* Smooth transition for all effects */
-    margin-bottom: 25px; /* Margin below the button */
+    padding: 12px 24px; 
+    color: var(--text-color); 
+    background: var(--main-color); 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    letter-spacing: 1px; 
+    font-weight: 500; 
+    text-align: center; 
+    text-decoration: none;
+    transition: all 0.45s ease; 
+    margin-bottom: 25px; 
+} */
+/* Hover effect for the button */
+
+/* .btn:hover {
+    background: var(--hover-color, #06c9ff);
+    color: var(--hover-text-color, #000000); 
+    box-shadow: 0 0 12px 6px rgba(0, 217, 255, 0.8), 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02); 
+} */
+
+
+.btn {
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background: #333; /* Dark background for button */
+    border-radius: 10px; /* Rounded corners */
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Initial shadow effect */
 }
 
-/* Hover effect for the button */
+/* Button hover effects */
 .btn:hover {
-    background: var(--hover-color, #06c9ff); /* Darker background color on hover */
-    color: var(--hover-text-color, #000000); /* Change text color on hover */
-    box-shadow: 0 0 12px 6px rgba(0, 217, 255, 0.8), 0 4px 8px rgba(0, 0, 0, 0.2); /* Glow and subtle shadow */
-    transform: scale(1.02); /* Slightly enlarge the button */
+    background: #0ff; /* Change background color on hover */
+    color: #121212; /* Dark text color on hover */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.5);
 }
+
+/* Glowing effect using pseudo-elements */
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.3) 20%, transparent 80%);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s ease;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+/* Text on top of glowing effect */
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Expand glowing effect on hover */
+.btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+
+
+
+
+
 
 .about{
     display: grid;
@@ -452,45 +579,48 @@ section{
 /* TEXT ANIMATION */
 
 
+
+
+
 .wrapper {
     display: flex;
+    margin-bottom: 15px;
 }
-
 .wrapper .static-txt {
     color: #fff;
-    font-size: 60px;
+    font-size: 40px; /* Reduced font size */
     font-weight: 400;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.6); /* Adjusted shadow for new font size */
 }
 
 .wrapper .dynamic-txts {
-    margin-left: 15px;
-    height: 90px;
-    line-height: 90px;
+    margin-left: 10px; /* Adjusted margin to match new text size */
+    height: 60px; /* Adjusted height */
+    line-height: 60px; /* Adjusted line height */
     overflow: hidden;
 }
 
 .dynamic-txts li {
     list-style: none;
     color: #ffffff00;
-    font-size: 60px;
+    font-size: 40px; /* Reduced font size */
     font-weight: 500;
     position: relative;
     top: 0;
     animation: slide 12s steps(4) infinite;
-    text-shadow: 0 0 10px rgba(0, 229, 255, 0.8), 0 0 20px rgba(252, 109, 109, 0);
+    text-shadow: 0 0 8px rgba(0, 229, 255, 0.8), 0 0 15px rgba(252, 109, 109, 0); /* Adjusted shadow for new font size */
 }
 
 @keyframes slide {
     100% {
-        top: -360px;
+        top: -240px; /* Adjusted to match new text size */
     }
 }
 
 .dynamic-txts li span {
     position: relative;
-    margin: 5px 0;
-    line-height: 90px;
+    margin: 3px 0; /* Adjusted margin */
+    line-height: 60px; /* Adjusted line height */
 }
 
 .dynamic-txts li span::after {
@@ -500,13 +630,13 @@ section{
     height: 100%;
     width: 100%;
     background: #ffffff00;
-    border-left: 2px solid #00d9ff;
-    animation: typing 3s steps(20) infinite;
+    border-left: 1px solid #00d9ff; /* Adjusted border width */
+    animation: typing 2s steps(20) infinite; /* Adjusted animation duration */
 }
 
 @keyframes typing {
     40%, 60% {
-        left: calc(100% + 30px);
+        left: calc(100% + 15px); /* Adjusted for new border width */
     }
     100% {
         left: 0;
@@ -608,6 +738,7 @@ section{
 }
 
 .row img {
+    height: 300px;
     width: 100%;
     border-radius: 8px;
     display: block;
@@ -763,23 +894,60 @@ margin-right: 15px;
     height: 240px;
 }
 .contact-form .submit{
+/*     
     display: inline-block;
     font-size: 16px;
     background: var(--main-color);
     color: var(--text-color);
     width: 160px;
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background: #333; */
      /* Subtle shadow */
+    width:160px;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background: #333; /* Dark background for button */
+    border-radius: 8px; /* Rounded corners */
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 .contact-form .submit:hover{
-    box-shadow: 0px 4px 6px rgba(0, 217, 255, 0.56); /* Subtle shadow */
-    border: 2px solid var(--border-hover-color);
-    cursor: pointer;
-    transform: scale(1.1);
+    background: #0ff; /* Change background color on hover */
+    color: #121212; /* Dark text color on hover */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.5);
 }
 
+.contact-form .submit::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.3) 20%, transparent 80%);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s ease;
+    border-radius: 50%;
+    z-index: 0;
+}
+.contact-form .submit span{
+    position: relative;
+    z-index: 1;
+}
 
-
+.contact-form .submit:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
 
 
 /* Footer base styles */
@@ -806,7 +974,7 @@ margin-right: 15px;
 }
 
 .footer-about h3 {
-    color: #0088cc;
+    color:#00d9ff;
     text-align: justify;
     font-size: 20px;
     margin-bottom: 10px;
@@ -826,7 +994,7 @@ margin-right: 15px;
 }
 
 .footer-links h3 {
-    color: #0088cc;
+    color:#00d9ff;
     text-align: justify;
     font-size: 20px;
     margin-bottom: 10px;
@@ -849,7 +1017,7 @@ margin-right: 15px;
 }
 
 .footer-links ul li a:hover {
-    color: #ddd;
+    color: #a6a99f5c;
 }
 
 /* Contact section */
@@ -860,7 +1028,7 @@ margin-right: 15px;
 }
 
 .footer-contact h3 {
-    color: #05b4ff;
+    color:#00d9ff;
     text-align: justify;
     font-size: 20px;
     margin-bottom: 10px;
