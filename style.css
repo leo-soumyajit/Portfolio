@@ -395,8 +395,8 @@ section{
 }
 
 .social-icon .icon .leetcode:hover {
-    background-color: rgb(255, 128, 0); /* Full yellow background on hover */
-    box-shadow: 0 0 10px 5px rgb(255, 170, 0); /* Subtle yellow glow */
+    background-color: rgb(255, 106, 0); /* Full yellow background on hover */
+    box-shadow: 0 0 10px 5px rgb(255, 140, 0); /* Subtle yellow glow */
     transform: scale(1.05); /* Slight enlargement on hover */
 }
 
