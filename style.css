@@ -369,9 +369,34 @@ section{
 }
 
 /* Yellow background and subtle glow effect on hover */
-.social-icon .icon:hover {
+/* .social-icon .icon:hover {
     background-color: rgb(0, 247, 255); /* Full yellow background on hover */
-    box-shadow: 0 0 10px 5px rgba(89, 249, 255, 0.6); /* Subtle yellow glow */
+    /* box-shadow: 0 0 10px 5px rgba(89, 249, 255, 0.6); /* Subtle yellow glow */
+    /*transform: scale(1.05); Slight enlargement on hover */
+/*}*/
+
+.social-icon .icon .facebook:hover {
+    background-color: rgb(0, 13, 255); /* Full yellow background on hover */
+    box-shadow: 0 0 10px 5px rgba(0, 47, 255, 0.6); /* Subtle yellow glow */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+
+.social-icon .icon .instagram:hover {
+    background-color: rgb(255, 0, 47); /* Full yellow background on hover */
+    box-shadow: 0 0 10px 5px rgba(50, 120, 210, 0.6); /* Subtle yellow glow */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+.social-icon .icon .linkedin:hover {
+    background-color: rgb(0, 30, 255); /* Full yellow background on hover */
+    box-shadow: 0 0 10px 5px rgba(119, 89, 255, 0.6); /* Subtle yellow glow */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+.social-icon .icon .leetcode:hover {
+    background-color: rgb(255, 128, 0); /* Full yellow background on hover */
+    box-shadow: 0 0 10px 5px rgb(255, 170, 0); /* Subtle yellow glow */
     transform: scale(1.05); /* Slight enlargement on hover */
 }
 
@@ -643,4 +668,251 @@ section{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2.5rem;
+}
+.contact {
+    background: var(--second-bg-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.contact-text h4{
+    color: var(--text-color);
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-text h2{
+    color: var(--text-color);
+    margin: 18px 0;
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.contact-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+.list{
+    margin-bottom: 2.8rem;
+}
+.list li{
+    margin-bottom: 12px;
+}
+.list li a{
+    display: block;
+    color: var(--second-color);
+    font-size: 14px;
+}
+.list li a:hover{
+    color: var(--text-color);
+    transform: translateY(5px);
+}
+.contact-icons i{
+height: 45px;
+width: 45px;
+/* background:var(--main-color); */
+color: var(--text-color);
+font-size: 22px;
+display: inline-block;
+align-items: center;
+justify-content: center;
+border-radius: 8px;
+margin-right: 15px;
+}
+.contact-icons i:hover{
+    /* background: var(--text-color); */
+    /* color: var(--main-color); */
+
+}
+.contact-form form{
+    position: relative;
+
+}
+.contact-form form input , form textarea{
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.32);
+    width: 100%;
+    padding: 14px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius:8px ;
+
+}
+#facebook:hover {
+    color: #3b5998; /* Facebook blue */
+}
+
+#instagram:hover {
+    color: #e4405f; /* Instagram pink */
+}
+
+#whatsapp:hover {
+    color: #25d366; /* WhatsApp green */
+}
+
+#telegram:hover {
+    color: #0088cc; /* Telegram blue */
+}
+.contact-form textarea{
+    resize: none;
+    height: 240px;
+}
+.contact-form .submit{
+    display: inline-block;
+    font-size: 16px;
+    background: var(--main-color);
+    color: var(--text-color);
+    width: 160px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+     /* Subtle shadow */
+}
+.contact-form .submit:hover{
+    box-shadow: 0px 4px 6px rgba(0, 217, 255, 0.56); /* Subtle shadow */
+    border: 2px solid var(--border-hover-color);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* Footer base styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About section */
+.footer-about {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px 0;
+}
+
+.footer-about h3 {
+    color: #0088cc;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-about p {
+    text-align: left;
+    margin-right: 10px;
+}
+
+/* Quick Links */
+.footer-links {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px 0;
+    margin-left: 20px;
+}
+
+.footer-links h3 {
+    color: #0088cc;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    text-align: justify;
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ddd;
+}
+
+/* Contact section */
+.footer-contact {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px 0;
+}
+
+.footer-contact h3 {
+    color: #05b4ff;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    text-align:justify;
+    margin: 5px 0;
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: #ddd;
+}
+
+/* Social media icons */
+.contact-icons {
+    margin-top: 30px; /* Space above the icons */
+    display: flex;
+    justify-content: left; /* Center the icons */
+}
+
+.contact-icons a i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+#facebook:hover {
+    color: #3b5998; /* Facebook blue */
+}
+
+#instagram:hover {
+    color: #e4405f; /* Instagram pink */
+}
+
+#whatsapp:hover {
+    color: #25d366; /* WhatsApp green */
+}
+
+#telegram:hover {
+    color: #0088cc; /* Telegram blue */
+}
+
+/* Footer bottom */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
 }
