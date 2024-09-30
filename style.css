@@ -536,6 +536,16 @@ section{
     transform: scale(1.05); /* Slight enlargement on hover */
 }
 
+.social-icon .icon .github:hover {
+    background-color: rgb(0, 0, 0); /* Full yellow background on hover */
+    box-shadow: 0 0 10px 5px rgb(56, 55, 55); /* Subtle yellow glow */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+/* .github img {
+    height: 70px;
+    width: 80px;
+} */
+
 /* Ensure icon stays visible against the yellow background */
 .social-icon .icon:hover img {
     
@@ -742,7 +752,7 @@ section{
 .row {
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -756,7 +766,7 @@ section{
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.273), #ffae007e);
+    background: linear-gradient(rgba(0, 0, 0, 0.273), #ffae0083);
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -776,14 +786,25 @@ section{
 }
 
 .layer p {
-    color: var(--second-color);
+    color: rgb(0, 0, 0);
+    font-weight: 700;
     font-size: 1rem;
     line-height: 1.8;
+    transition: text-shadow 0.3s ease-in-out; /* Smooth transition for the glow */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* Light glow */
+                 0 0 20px rgba(255, 255, 255, 0.8), /* Medium glow */
+                 0 0 30px rgb(255, 255, 255);   /* Strong glow */
 }
+
+.layer p:hover {
+    
+}
+
 
 .layer i {
     color: var(--main-color);
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 20px;
     background: var(--text-color);
     height: 60px;
@@ -793,6 +814,15 @@ section{
     justify-content: center;
     border-radius: 50px;
 }
+.layer i:hover {
+    color: rgb(21, 20, 20);
+    background: rgba(26, 255, 221, 0.938);
+    box-shadow: 0 0 15px rgba(26, 255, 221, 0.938), 
+                0 0 30px rgba(26, 255, 221, 0.938),
+                0 0 45px rgba(26, 255, 221, 0.938);
+    transition: box-shadow 0.1s ease-in-out;
+}
+
 
 .row:hover img {
     transform: scale(1.1);
@@ -1096,225 +1126,8 @@ margin-right: 15px;
     font-size: 14px;
 }
 
-/* Media query for extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-    header {
-        padding: 20px 10%;
-    }
-    .logo {
-        font-size: 28px;
-    }
-    .navlist a {
-        margin: 0 15px;
-        font-size: 14px;
-    }
-    .home-text h1 {
-        font-size: 2.5rem;
-    }
-    .home-text h3 {
-        font-size: 1.5rem;
-    }
-    .home-text p {
-        font-size: 0.9rem;
-    }
-    .btn {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-    .wrapper .static-txt,
-    .wrapper .dynamic-txts li {
-        font-size: 20px;
-    }
-    .about {
-        grid-template-columns: 1fr;
-    }
-    .about-img img {
-        max-width: 100%;
-    }
-    .skills-section {
-        flex-direction: column;
-    }
-    .skill {
-        width: 120px;
-    }
-    .edu {
-        height: auto;
-        padding: 20px;
-    }
-}
 
-/* Media query for small devices (landscape phones, 576px to 767.98px) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-    header {
-        padding: 20px 10%;
-    }
-    .logo {
-        font-size: 30px;
-    }
-    .navlist a {
-        margin: 0 20px;
-        font-size: 15px;
-    }
-    .home-text h1 {
-        font-size: 3.5rem;
-    }
-    .home-text h3 {
-        font-size: 2rem;
-    }
-    .home-text p {
-        font-size: 1rem;
-    }
-    .btn {
-        padding: 12px 24px;
-        font-size: 16px;
-    }
-    .wrapper .static-txt,
-    .wrapper .dynamic-txts li {
-        font-size: 30px;
-    }
-    .about {
-        grid-template-columns: 1fr;
-    }
-    .skills-section {
-        flex-direction: column;
-    }
-    .skill {
-        width: 130px;
-    }
-    .edu {
-        height: auto;
-        padding: 25px;
-    }
-}
 
-/* Media query for medium devices (tablets, 768px to 991.98px) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    header {
-        padding: 20px 12%;
-    }
-    .logo {
-        font-size: 32px;
-    }
-    .navlist a {
-        margin: 0 22px;
-        font-size: 16px;
-    }
-    .home-text h1 {
-        font-size: 4rem;
-    }
-    .home-text h3 {
-        font-size: 2.5rem;
-    }
-    .home-text p {
-        font-size: 1.05rem;
-    }
-    .btn {
-        padding: 14px 28px;
-        font-size: 17px;
-    }
-    .wrapper .static-txt,
-    .wrapper .dynamic-txts li {
-        font-size: 35px;
-    }
-    .about {
-        grid-template-columns: 1fr 1fr;
-    }
-    .skills-section {
-        flex-direction: row;
-    }
-    .skill {
-        width: 140px;
-    }
-    .edu {
-        height: auto;
-        padding: 30px;
-    }
-}
 
-/* Media query for large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    header {
-        padding: 20px 15%;
-    }
-    .logo {
-        font-size: 35px;
-    }
-    .navlist a {
-        margin: 0 25px;
-        font-size: 17px;
-    }
-    .home-text h1 {
-        font-size: 5rem;
-    }
-    .home-text h3 {
-        font-size: 3rem;
-    }
-    .home-text p {
-        font-size: 1.1rem;
-    }
-    .btn {
-        padding: 15px 30px;
-        font-size: 18px;
-    }
-    .wrapper .static-txt,
-    .wrapper .dynamic-txts li {
-        font-size: 40px;
-    }
-    .about {
-        grid-template-columns: 1fr 1fr;
-    }
-    .skills-section {
-        flex-direction: row;
-    }
-    .skill {
-        width: 150px;
-    }
-    .edu {
-        height: 500px;
-        padding: 35px;
-    }
-}
 
-/* Media query for extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    header {
-        padding: 22px 18%;
-    }
-    .logo {
-        font-size: 40px;
-    }
-    .navlist a {
-        margin: 0 30px;
-        font-size: 18px;
-    }
-    .home-text h1 {
-        font-size: 6rem;
-    }
-    .home-text h3 {
-        font-size: 3.5rem;
-    }
-    .home-text p {
-        font-size: 1.2rem;
-    }
-    .btn {
-        padding: 16px 32px;
-        font-size: 19px;
-    }
-    .wrapper .static-txt,
-    .wrapper .dynamic-txts li {
-        font-size: 45px;
-    }
-    .about {
-        grid-template-columns: 1fr 1fr;
-    }
-    .skills-section {
-        flex-direction: row;
-    }
-    .skill {
-        width: 160px;
-    }
-    .edu {
-        height: 500px;
-        padding: 40px;
-    }
-}
+
