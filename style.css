@@ -129,6 +129,37 @@ ul.navbar a:hover::before {
 
 
 
+.profile-picture {
+    position: absolute;
+    right: 4%; /* Adjust distance from the right side */
+    top: 50%;
+    transform: translateY(-50%); /* Center the image vertically within the section */
+}
+
+.profile-picture img {
+    width: 500px; /* Set a fixed size */
+    height: 500px;
+    border-radius: 50%;
+    border: 4px solid #00e5ff;
+    box-shadow: 
+        /* 0 0 10px rgb(0, 255, 255), Blue */
+        /* 0 0 20px rgb(255, 0, 0),   Red */
+        /* 0 0 30px rgb(0, 255, 0),   Green */
+        0 0 40px rgb(0, 213, 255); /* Yellow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Profile Picture */
+.profile-picture img:hover {
+    transform: scale(1.03); /* Slight zoom effect */
+    /* box-shadow: 
+        0 0 15px rgb(0, 162, 255), /* Blue */
+        0 0 25px rgb(255, 0, 0),   /* Red */
+        0 0 35px rgb(0, 255, 0),   /* Green */
+        0 0 45px rgb(255, 255, 0); Yellow */
+}
+
+
 #menu-icon{
     font-size: 35px;
     z-index: 1000;
@@ -144,7 +175,7 @@ section{
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image:url(Images/bgpic5bw.jpg) ; 
+    background-image:url(Images/background7.jpg) ; 
     background-color: #202020;
     background-size:cover;
     background-position: center;
