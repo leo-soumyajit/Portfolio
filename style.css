@@ -585,6 +585,14 @@ section{
 
 
 
+.social-icon .icon .gg:hover {
+    background-color: rgb(0, 180, 90); /* Closer to GeekforGeeks' green */
+    box-shadow: 0 0 15px 5px rgba(0, 128, 0, 0.5); /* Softer green glow */
+    transform: scale(1.1); /* Slightly more pronounced enlargement */
+    transition: all 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+
 .skills-section {
     display:flex;
     align-items: center;
