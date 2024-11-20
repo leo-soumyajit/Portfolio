@@ -675,7 +675,7 @@ section{
 
 .heatmap img {
     width: 100%;
-    max-width: 600px;
+    max-width: 550px;
     border-radius: 8px;
     border: 2px solid #4a4747;
     
@@ -692,11 +692,35 @@ section{
     /* box-shadow: 0 0 10px 10px rgb(0, 217, 255),  /* Cyan glow */
                 /* 0 0 20px 10px rgba(0, 217, 255);    */ 
 
-                box-shadow: 0 8px 16px rgb(0, 242, 255),
-                0 8px 16px rgb(16, 243, 255);
+                box-shadow: 0 8px 16px rgb(255, 157, 0),
+                0 8px 16px rgb(255, 157, 0);
   }
   
   
+
+
+  .heatmapgfg img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 8px;
+    border: 2px solid #4a4747;
+    
+    /* Neon glow effect */
+    box-shadow: 0 0 15px 5px rgb(28, 28, 28),   /* Cyan glow */
+                0 0 5px 5px rgb(32, 31, 31),   /* Purple glow */
+                0 0 5px 5px rgb(25, 24, 24);     /* Green glow */
+    transition: box-shadow 0.1s ease  ;  /* Smooth transition for glow effect */
+  }
+  
+  /* Optional: intensify the glow effect on hover */
+  .heatmapgfg img:hover {
+    transform: scale(1.02);
+    /* box-shadow: 0 0 10px 10px rgb(0, 217, 255),  /* Cyan glow */
+                /* 0 0 20px 10px rgba(0, 217, 255);    */ 
+
+                box-shadow: 0 8px 16px rgb(0, 230, 15),
+                0 8px 16px rgb(1, 216, 26);
+  }
 
   
   
