@@ -24,13 +24,13 @@ body{
     color: var(--text-color);
 }
 
-header{
+nav{
     box-shadow: 0 4px 8px rgba(24, 24, 24, 0.885);
     background-color: #2b2b2b;
-    position:relative;
+    /* position:relative; */
     width: 100%;
-    top:0;
-    right: 0;
+    /* top:0;
+    right: 0; */
     z-index: 1000;
     display: flex;
     justify-content: center;
@@ -39,6 +39,7 @@ header{
     padding: 22px 15%;
     border-bottom: 1px solid transparent;
     transition: all .45s ease;
+    /* border: 2px solid red; */
 }
 .logo{
     color: var(--text-color);
@@ -49,10 +50,11 @@ header{
 span{
     color: var(--main-color);
 }
-.navlist{
-    display: flex;
+.navbar {
+    /* border: 2px solid rebeccapurple; */
+    width: 80vw;
 }
-.navlist a{
+.navbar a{
     font-weight: 500;
     color: var(--second-color);
     font-size: 17px;
