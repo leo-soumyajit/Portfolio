@@ -1,337 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soumyajit Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="icon" type="image/x-icon" href="Images/aboutme.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soumyajit Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="icon" type="image/x-icon" href="Images/aboutme.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
+
 <body>
-    
-    <!------Header section------------>
-    <header>
-        <a href="#home" class="logo">< / Soumya<span>jit ></span></a>
-        <ul class="navbar">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#skills">Skill</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#project">Works</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="bx-bx-menu" id="menu-icon"></div>
-    </header>
-    <section class="home" id="home">
-        
 
-        
-        <div class="home-text">
-            <div clss="slide">
-                <span class="one">Hello</span>
-                <span class="two">I'm</span>
-            </div>
-            <h1 class="myname">Soumya<span>jit</span> Banerjee</h1>
+  <!------Nav section------------>
+  <nav>
+    <div id="logoSection">
+      <a href="#home" class="logo">&lt;/Soumya<span>jit&gt;</span></a>
+    </div>
+    <div id="navItems">
+      <ul class="navbar">
+        <li>
+          <a href="#home" class="active">Home</a>
+        </li>
+        <li>
+          <a href="#about">About me</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#skills">Skill</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#project">Works</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bx-bx-menu" id="menu-icon"></div>
+  </nav>
 
 
-            <!-- <div>
+  <section class="home" id="home">
+    <div class="home-text">
+      <div clss="slide">
+        <span class="one">Hello</span>
+        <span class="two">I'm</span>
+      </div>
+      <h1 class="myname">Soumya<span>jit</span> Banerjee</h1>
+
+
+      <!-- <div>
                 <h3>Backend<span> Developer</span></h3>
             </div> -->
-            <div class="wrapper">
-                <div class="static-txt">I'm a</div>
-                <ul class="dynamic-txts">
-                  <li><span>Backend-Developer</span></li>
-                  <li><span>Designer</span></li>
-                  <li><span>Editor</span></li>
-                  <li><span>Photographer</span></li>
-                </ul>
-              </div>
-            
-            <p>I am currently persuing B.Tech in Information Technology from Haldia Institute of Technology.<br> I currently skilled up myself in web development and further wanna become Java developer. 
-            </p>
-            <div class="button">
-                <a href="#about" class="btn">About me</a>
-            </div>
+      <div class="wrapper">
+        <div class="static-txt">I'm a</div>
+        <ul class="dynamic-txts">
+          <li><span>Backend-Developer</span></li>
+          <li><span>Designer</span></li>
+          <li><span>Editor</span></li>
+          <li><span>Photographer</span></li>
+        </ul>
+      </div>
 
-            <div class="social-icon">
-                <div class="icon" class="facebook"><a href="https://www.facebook.com/share/2iqZkFSvRcpdgCTw/?mibextid=qi2Omg" target="_main" class="facebook"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcFJREFUSEu11T+oT2EYwPHPLYUwyCIki0GRjKRkEJIuMYgsFDKIlAzyJxnUFQburTtYlEEU+TORQWajvyXCYjAoinCeen86vZ3znt8P92znff58n+d9/rxDJvgbmmD/ugCTsQXrsBQL8Atv8BT3cRPf2wItAdbjcnJaSvQV9uFBk1Ib4GQV6YkBru8njuBcbtMEOIXjAzivqx7ExfpBDtiI2wXnn3AYj/A26Y2ks/iNTFbhcc9HHTAdLzG7BfADi/E8k9cBIQr5kl7h64Ao1Ggh+mvYXpOvwQqsxfLMbhNuxVkdcAcbCoBjOJPkW3G9oDuOPTngPeYUjA7hQpJHMc8XdGNGluWAr5jynwCfq26amQO+YFoG+NiRVag/xOrMLnzNyAEvsDBT/IC5HTPxDvMynWdYlAOuVm26Y8AMYld9awjgSjUnu3LANkQrtn2DFLmxTSfhNea3EPoF/LmePIP4jw167x8AscpX4knPR9Oyi2V1oAHSTwan80XZBIizsd4k1kBdgLNVwY/mgZUenJ1pWmclozZAbIC9uNt0tV1P5lTsxub0NF5KTvZjuNqaNxAt+VdPZsd89SfuyqA/LwWt33YeVhnsaaE0AAAAAElFTkSuQmCC"/ ></a></div>
-                <div class="icon" class="instagram"><a href="https://www.instagram.com/leo_soumyajit?igsh=N3IxcW05ejdwanE1" target="_main"  class="instagram"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjNJREFUSEvF1UnITWEYB/DfhyLCRlamQiEJkSQskFJfMmS2sTEsFBmKLJTIELKyYCF9hoxRSuykJJIyJpKyYUVW5vfRe+t0Oqd7U7fvrds95x2e///5/5/nPR3aPDraHF+3AYzEVszEeGqJ/MEz3MNxvCkrUpXBBpxAL3zAA7yqkXIyJmIofmATThX3lgGm5IAvsAhvW/QosryBYZiKJ41zZYCrWIAxeN9C8LVJvr34krJdh0cpo+tYUgcQQYN9gBRHD8zDOPzCS9zNc7ezlMMzwCCMqAP4ii5sLEQPfS9iegk0jD2ddP+EwTiDUGA++tUB/MYR7Mgbgvn9zGgb7qBnZn4oV80sRDXFCCJL855/E2UPYuMB7MoHluVD8X+plMHy5NWFZOjCbHAsn0/yxXwQqwUIZjvzejxvR398KwGE1p9TOe9LvuzJayHvqiLxqgyiYbbkAwezXANT44U/xdEA2J96YHdeOIs1zQCO5S6OM1Ful7OuV0oAwTQYFyWK9xXNPChm0DA5SjCkCpOjw+emSjmM15hdMjkA+9R5EDoHi/UFtkOymTMqynQlPhbmo0znICStNDkuq/hVNVow60wV9h23cLPAvBHvMQYkkqPrAIL94lSaY1u8KopJTUj311OcSyRX1wFMSiyDRWwMg9+VZKl7jeDXEF5NyzEqJYrJxnUdBj/MksT8TzxPjdgbo7LZMd8XcQvH+macLLKo+6L9zwfnaNX13m2fzBalb76t7Rn8BcJ+cxlsKeBhAAAAAElFTkSuQmCC"/></a></div>
-                <div class="icon" class="linkedin"><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_main" class="linkedin"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAShJREFUSEvt1U0rRkEYxvHfQykrsrFSXoqFKFl5KQsfQ76AslA2VvZKSfkG8jFkIUXWkuRtZaVsWCg0NUfTOFHPeLJg6tQ953Rf/3uue2ZOQ4tHo8X66gCDeMXNT8BzwDaWo/AmVkshKWAE55lgP25LIN8BBkqtyi3awVKseAsrJdWH3LomD8cmX5aK1wGm0RGFn3Ec4wl0xfgJJ+jBLMbQjj18KipfwT16o9AVhmJ8iJkYX2A9Cqb5YWuvYSNdeTOAB3TGp87FeexXH5oBVLkBdIdxtCWkYNVCKWAXi1FkDgcJ4AyjpYBwKEMvqhFW0hcnj+guBYSd9pIATjGZzD+s/6oH1wgXXxjpLgrz4PlbIniEqX9AddD+uEV1R7/o3a/89IsqzpPfAXF0UxkpbL/qAAAAAElFTkSuQmCC"/></a> </div>
-                <div class="icon" class="leetcode"><a href="https://leetcode.com/u/soumyajit_2005/" target="_main" class="leetcode"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAa1JREFUSEu11UuoTXEUx/HPYSTuVZSp150TKUndMGCg1PUWykwxM/CYu0KGGEpJ7h0YMPRIlGKAufIYk5KiO7jYq/67/u32Pvucw96j0/6v//qu9Vvrt09Px0+v4/xGBazGx0GKGwUwgfd4hc1tkFEAx3EbD7CnC8BNnMQFXOoC8A7rsA3P/gWwEgdxJUuyGN+xAEvwE2dxD5/rYE0z2IFZLMPhlCDuR9VP8QYb09ldfMMBPKlC6gBncBkLcR9Hiyp/pYvnMY3rOF3ELcIdTGE+dXMth+SACL6VZPmNSJbLE/ceYjeOpcRlrnO4mKSbKeQ6URZVAkLTF9iCH9iLRzWafsVyrMWHyvmuJOsYXmIr/pSAkCM2Il7GEPcVvx9XEpQG+4IVNfCdiOqXpmInc0DEVyWKtq9mifoZrFWivKDqkI8U85hDncGGGnIOydf0UGr9LdYjWn+egmOFh17TErQK+5NMpcHibDwZLN+gMNqnYYxWjd2eTBRdbGj7PDT5oN+9+LDFnt/AqS4ATQZrZQ36f/AamxoM1hcyKCCSrKlx73/roDVRU8AwHYwE+QvldVoZJFegJwAAAABJRU5ErkJggg=="/></a> </div>
-                <div class="icon" class="leetcode"><a href="https://github.com/leo-soumyajit" target="_main" class="github"><img src="Images/github.png"></a> </div>
-                <div class="icon" class=""><a href="https://www.geeksforgeeks.org/user/banerjeesouw8m3/" target="_main" class="gg"><img src="Images/gfglogo.png"></a> </div>
-            </div>
+      <p>I am currently persuing B.Tech in Information Technology from Haldia Institute of Technology.<br> I currently
+        skilled up myself in web development and further wanna become Java developer.
+      </p>
+      <div class="button">
+        <a href="#about" class="btn">About me</a>
+      </div>
 
-            <!-- <div class="profile-picture">
+      <div class="social-icon">
+        <div class="icon" class="facebook"><a href="https://www.facebook.com/share/2iqZkFSvRcpdgCTw/?mibextid=qi2Omg"
+            target="_main" class="facebook"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcFJREFUSEu11T+oT2EYwPHPLYUwyCIki0GRjKRkEJIuMYgsFDKIlAzyJxnUFQburTtYlEEU+TORQWajvyXCYjAoinCeen86vZ3znt8P92znff58n+d9/rxDJvgbmmD/ugCTsQXrsBQL8Atv8BT3cRPf2wItAdbjcnJaSvQV9uFBk1Ib4GQV6YkBru8njuBcbtMEOIXjAzivqx7ExfpBDtiI2wXnn3AYj/A26Y2ks/iNTFbhcc9HHTAdLzG7BfADi/E8k9cBIQr5kl7h64Ao1Ggh+mvYXpOvwQqsxfLMbhNuxVkdcAcbCoBjOJPkW3G9oDuOPTngPeYUjA7hQpJHMc8XdGNGluWAr5jynwCfq26amQO+YFoG+NiRVag/xOrMLnzNyAEvsDBT/IC5HTPxDvMynWdYlAOuVm26Y8AMYld9awjgSjUnu3LANkQrtn2DFLmxTSfhNea3EPoF/LmePIP4jw167x8AscpX4knPR9Oyi2V1oAHSTwan80XZBIizsd4k1kBdgLNVwY/mgZUenJ1pWmclozZAbIC9uNt0tV1P5lTsxub0NF5KTvZjuNqaNxAt+VdPZsd89SfuyqA/LwWt33YeVhnsaaE0AAAAAElFTkSuQmCC"
+              /></a></div>
+        <div class="icon" class="instagram"><a href="https://www.instagram.com/leo_soumyajit?igsh=N3IxcW05ejdwanE1"
+            target="_main" class="instagram"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjNJREFUSEvF1UnITWEYB/DfhyLCRlamQiEJkSQskFJfMmS2sTEsFBmKLJTIELKyYCF9hoxRSuykJJIyJpKyYUVW5vfRe+t0Oqd7U7fvrds95x2e///5/5/nPR3aPDraHF+3AYzEVszEeGqJ/MEz3MNxvCkrUpXBBpxAL3zAA7yqkXIyJmIofmATThX3lgGm5IAvsAhvW/QosryBYZiKJ41zZYCrWIAxeN9C8LVJvr34krJdh0cpo+tYUgcQQYN9gBRHD8zDOPzCS9zNc7ezlMMzwCCMqAP4ii5sLEQPfS9iegk0jD2ddP+EwTiDUGA++tUB/MYR7Mgbgvn9zGgb7qBnZn4oV80sRDXFCCJL855/E2UPYuMB7MoHluVD8X+plMHy5NWFZOjCbHAsn0/yxXwQqwUIZjvzejxvR398KwGE1p9TOe9LvuzJayHvqiLxqgyiYbbkAwezXANT44U/xdEA2J96YHdeOIs1zQCO5S6OM1Ful7OuV0oAwTQYFyWK9xXNPChm0DA5SjCkCpOjw+emSjmM15hdMjkA+9R5EDoHi/UFtkOymTMqynQlPhbmo0znICStNDkuq/hVNVow60wV9h23cLPAvBHvMQYkkqPrAIL94lSaY1u8KopJTUj311OcSyRX1wFMSiyDRWwMg9+VZKl7jeDXEF5NyzEqJYrJxnUdBj/MksT8TzxPjdgbo7LZMd8XcQvH+macLLKo+6L9zwfnaNX13m2fzBalb76t7Rn8BcJ+cxlsKeBhAAAAAElFTkSuQmCC" /></a>
+        </div>
+        <div class="icon" class="linkedin"><a
+            href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+            target="_main" class="linkedin"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAShJREFUSEvt1U0rRkEYxvHfQykrsrFSXoqFKFl5KQsfQ76AslA2VvZKSfkG8jFkIUXWkuRtZaVsWCg0NUfTOFHPeLJg6tQ953Rf/3uue2ZOQ4tHo8X66gCDeMXNT8BzwDaWo/AmVkshKWAE55lgP25LIN8BBkqtyi3awVKseAsrJdWH3LomD8cmX5aK1wGm0RGFn3Ec4wl0xfgJJ+jBLMbQjj18KipfwT16o9AVhmJ8iJkYX2A9Cqb5YWuvYSNdeTOAB3TGp87FeexXH5oBVLkBdIdxtCWkYNVCKWAXi1FkDgcJ4AyjpYBwKEMvqhFW0hcnj+guBYSd9pIATjGZzD+s/6oH1wgXXxjpLgrz4PlbIniEqX9AddD+uEV1R7/o3a/89IsqzpPfAXF0UxkpbL/qAAAAAElFTkSuQmCC" /></a>
+        </div>
+        <div class="icon" class="leetcode"><a href="https://leetcode.com/u/soumyajit_2005/" target="_main"
+            class="leetcode"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAa1JREFUSEu11UuoTXEUx/HPYSTuVZSp150TKUndMGCg1PUWykwxM/CYu0KGGEpJ7h0YMPRIlGKAufIYk5KiO7jYq/67/u32Pvucw96j0/6v//qu9Vvrt09Px0+v4/xGBazGx0GKGwUwgfd4hc1tkFEAx3EbD7CnC8BNnMQFXOoC8A7rsA3P/gWwEgdxJUuyGN+xAEvwE2dxD5/rYE0z2IFZLMPhlCDuR9VP8QYb09ldfMMBPKlC6gBncBkLcR9Hiyp/pYvnMY3rOF3ELcIdTGE+dXMth+SACL6VZPmNSJbLE/ceYjeOpcRlrnO4mKSbKeQ6URZVAkLTF9iCH9iLRzWafsVyrMWHyvmuJOsYXmIr/pSAkCM2Il7GEPcVvx9XEpQG+4IVNfCdiOqXpmInc0DEVyWKtq9mifoZrFWivKDqkI8U85hDncGGGnIOydf0UGr9LdYjWn+egmOFh17TErQK+5NMpcHibDwZLN+gMNqnYYxWjd2eTBRdbGj7PDT5oN+9+LDFnt/AqS4ATQZrZQ36f/AamxoM1hcyKCCSrKlx73/roDVRU8AwHYwE+QvldVoZJFegJwAAAABJRU5ErkJggg==" /></a>
+        </div>
+        <div class="icon" class="leetcode"><a href="https://github.com/leo-soumyajit" target="_main" class="github"><img
+              src="Images/github.png"></a> </div>
+        <div class="icon" class=""><a href="https://www.geeksforgeeks.org/user/banerjeesouw8m3/" target="_main"
+            class="gg"><img src="Images/gfglogo.png"></a> </div>
+      </div>
+
+      <!-- <div class="profile-picture">
                 <div>
                     <img src="Images/messi.jpg" alt="Profile Picture">
                 </div>
             </div> -->
 
-        </div>
-        
-        <div class="profile-picture">
-            <img src="Images/profilePic5.png" alt="Profile Picture">
-        </div>
-       
-    </section>
-    <!-----About Section------->
-    <section class="about" id="about">
-            <img src="Images/aboutme.jpg " loading="lazy" height="700px" width="600px" style="border-radius: 90%;" style="background: transparent;">
-        </div>
-        <div class="about-text">
-            
-            <h2>About<span> Me!</span></h2>
-            <h4>Backend <span>Developer</span></h4>
-            <p>I am currently persuing B.Tech in Information Technology from Haldia Institute of Technology. I currently skilled up myself in web development and further wanna become frontend+backend developer. 
+    </div>
 
-                From a young age, I was always the one who was constantly dismantling and reassembling my toys to see how they work. That curiosity eventually led me to the world of coding and web development, where I discovered the joy of creating and problem-solving through code.</p>
-                <p id="Email">banerjeesoumyajit2005@gmail.com</p>
-                <p id="Place">Kolaghat, India - 721154</p>
-                <a href="#" class="btn" id="resume">Resume</a>
-                <a href="#" class="btn">More About</a>    
+    <div class="profile-picture">
+      <img src="Images/profilePic5.png" alt="Profile Picture">
+    </div>
+
+  
+
+  </section>
+  <!-----About Section------->
+  <section class="about" id="about">
+    <img src="Images/aboutme.jpg " loading="lazy" height="700px" width="600px" style="border-radius: 90%;"
+      style="background: transparent;">
+    </div>
+    <div class="about-text">
+
+      <h2>About<span> Me!</span></h2>
+      <h4>Backend <span>Developer</span></h4>
+      <p>I am currently persuing B.Tech in Information Technology from Haldia Institute of Technology. I currently
+        skilled up myself in web development and further wanna become frontend+backend developer.
+
+        From a young age, I was always the one who was constantly dismantling and reassembling my toys to see how they
+        work. That curiosity eventually led me to the world of coding and web development, where I discovered the joy of
+        creating and problem-solving through code.</p>
+      <p id="Email">banerjeesoumyajit2005@gmail.com</p>
+      <p id="Place">Kolaghat, India - 721154</p>
+      <a href="#" class="btn" id="resume">Resume</a>
+      <a href="#" class="btn">More About</a>
+    </div>
+  </section>
+  <!----Service Section------->
+
+  <section class="services" id="services">
+    <div class="main-text">
+      <h2><span>My </span>Services!</h2>
+    </div>
+    <div class="services-content">
+      <div class="box">
+        <div class="s-icons">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJNJREFUSEvtlbEJgDAQRV/mEASx0G1cxsYNdCEHsbETBfdQLK5JOHIpYpXUj/8vP+G+I/NxmfXRDAZgBnrjADswAqvPawY3UBnFBTuA1mrwJIoLHgys3UAMrG+k8sVAsi8RRT9tiahEFCbw27KLhu8Byds0m8EF1InqJ9BYC+erzAXojCYbMKVUplE3jlkbK66kEC/59yYZ6oqzowAAAABJRU5ErkJggg=="
+            loading="lazy" />
         </div>
-    </section>
-    <!----Service Section------->
-    
-    <section class="services" id="services">
-        <div class="main-text">
-            <h2><span>My </span>Services!</h2>
+        <h3>Web Design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sequi architecto assumenda aut,
+          necessitatibus eaque earum harum quaerat eveniet animi reprehenderit nulla ipsa rerum fugiat veritatis
+          possimus officiis consectetur quo.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+      <div class="box">
+        <div class="s-icons">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAa1JREFUSEu11UuoTXEUx/HPYSTuVZSp150TKUndMGCg1PUWykwxM/CYu0KGGEpJ7h0YMPRIlGKAufIYk5KiO7jYq/67/u32Pvucw96j0/6v//qu9Vvrt09Px0+v4/xGBazGx0GKGwUwgfd4hc1tkFEAx3EbD7CnC8BNnMQFXOoC8A7rsA3P/gWwEgdxJUuyGN+xAEvwE2dxD5/rYE0z2IFZLMPhlCDuR9VP8QYb09ldfMMBPKlC6gBncBkLcR9Hiyp/pYvnMY3rOF3ELcIdTGE+dXMth+SACL6VZPmNSJbLE/ceYjeOpcRlrnO4mKSbKeQ6URZVAkLTF9iCH9iLRzWafsVyrMWHyvmuJOsYXmIr/pSAkCM2Il7GEPcVvx9XEpQG+4IVNfCdiOqXpmInc0DEVyWKtq9mifoZrFWivKDqkI8U85hDncGGGnIOydf0UGr9LdYjWn+egmOFh17TErQK+5NMpcHibDwZLN+gMNqnYYxWjd2eTBRdbGj7PDT5oN+9+LDFnt/AqS4ATQZrZQ36f/AamxoM1hcyKCCSrKlx73/roDVRU8AwHYwE+QvldVoZJFegJwAAAABJRU5ErkJggg=="
+            loading="lazy" />
         </div>
-        <div class="services-content">
-            <div class="box">
-                <div class="s-icons">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJNJREFUSEvtlbEJgDAQRV/mEASx0G1cxsYNdCEHsbETBfdQLK5JOHIpYpXUj/8vP+G+I/NxmfXRDAZgBnrjADswAqvPawY3UBnFBTuA1mrwJIoLHgys3UAMrG+k8sVAsi8RRT9tiahEFCbw27KLhu8Byds0m8EF1InqJ9BYC+erzAXojCYbMKVUplE3jlkbK66kEC/59yYZ6oqzowAAAABJRU5ErkJggg==" loading="lazy"/>
-                </div>
-                <h3>Web Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sequi architecto assumenda aut, necessitatibus eaque earum harum quaerat eveniet animi reprehenderit nulla ipsa rerum fugiat veritatis possimus officiis consectetur quo.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="box">
-                <div class="s-icons">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAa1JREFUSEu11UuoTXEUx/HPYSTuVZSp150TKUndMGCg1PUWykwxM/CYu0KGGEpJ7h0YMPRIlGKAufIYk5KiO7jYq/67/u32Pvucw96j0/6v//qu9Vvrt09Px0+v4/xGBazGx0GKGwUwgfd4hc1tkFEAx3EbD7CnC8BNnMQFXOoC8A7rsA3P/gWwEgdxJUuyGN+xAEvwE2dxD5/rYE0z2IFZLMPhlCDuR9VP8QYb09ldfMMBPKlC6gBncBkLcR9Hiyp/pYvnMY3rOF3ELcIdTGE+dXMth+SACL6VZPmNSJbLE/ceYjeOpcRlrnO4mKSbKeQ6URZVAkLTF9iCH9iLRzWafsVyrMWHyvmuJOsYXmIr/pSAkCM2Il7GEPcVvx9XEpQG+4IVNfCdiOqXpmInc0DEVyWKtq9mifoZrFWivKDqkI8U85hDncGGGnIOydf0UGr9LdYjWn+egmOFh17TErQK+5NMpcHibDwZLN+gMNqnYYxWjd2eTBRdbGj7PDT5oN+9+LDFnt/AqS4ATQZrZQ36f/AamxoM1hcyKCCSrKlx73/roDVRU8AwHYwE+QvldVoZJFegJwAAAABJRU5ErkJggg==" loading="lazy" />
-                </div>
-                <h3>Problem Solver</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sequi architecto assumenda aut, necessitatibus eaque earum harum quaerat eveniet animi reprehenderit nulla ipsa rerum fugiat veritatis possimus officiis consectetur quo.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="box">
-                <div class="s-icons">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWpJREFUSEvV1L1KHWEQxvHfES/BiDEY8YNoJQgpJIHYmkZvIEUKBS8ggt6BojeQQlJ4BwbSJyQ2NmJjBBPiJ6Kg3kAwZ2CFzcs5Z132WDjV7rzzPv/ZmdmpeWCrPbC++wB68Bkvk2S2MY3zVkkWAZ5gC8NNRA7wCpfNIK0AIf4No/iJNzmh9Ow1rhpB8oAZLGeC+dgQn8RFItCdJTCS+PfwAV/Cnwec4FkSvJ9lnorfhUV/vuJFcu83hlLAbRZU1JeiwftPJy/WChCZfkTUOuw75po0tzQgar1TBzxNUj/EOK4Tf2nABt5hE4vowBqmsq+arwo4RW82AGeZ2CB+4Qj9VQF309WHeA57jihRvIc/b6VL9Anvs3WxgE6s4m1dfL0Oma0K6MJugyYfYww3VQFxPyYosp3AX/xo55gW/VjpeeketA0QUxHT0Q77g4F0F8U2XUG6HcsCYyCWGm3TskL3iq+6OQshjx/wD1YqTxmlYc6OAAAAAElFTkSuQmCC" loading="lazy" />
-                    
-                </div>
-                <h3>Photographer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sequi architecto assumenda aut, necessitatibus eaque earum harum quaerat eveniet animi reprehenderit nulla ipsa rerum fugiat veritatis possimus officiis consectetur quo.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
+        <h3>Problem Solver</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sequi architecto assumenda aut,
+          necessitatibus eaque earum harum quaerat eveniet animi reprehenderit nulla ipsa rerum fugiat veritatis
+          possimus officiis consectetur quo.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+      <div class="box">
+        <div class="s-icons">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWpJREFUSEvV1L1KHWEQxvHfES/BiDEY8YNoJQgpJIHYmkZvIEUKBS8ggt6BojeQQlJ4BwbSJyQ2NmJjBBPiJ6Kg3kAwZ2CFzcs5Z132WDjV7rzzPv/ZmdmpeWCrPbC++wB68Bkvk2S2MY3zVkkWAZ5gC8NNRA7wCpfNIK0AIf4No/iJNzmh9Ow1rhpB8oAZLGeC+dgQn8RFItCdJTCS+PfwAV/Cnwec4FkSvJ9lnorfhUV/vuJFcu83hlLAbRZU1JeiwftPJy/WChCZfkTUOuw75po0tzQgar1TBzxNUj/EOK4Tf2nABt5hE4vowBqmsq+arwo4RW82AGeZ2CB+4Qj9VQF309WHeA57jihRvIc/b6VL9Anvs3WxgE6s4m1dfL0Oma0K6MJugyYfYww3VQFxPyYosp3AX/xo55gW/VjpeeketA0QUxHT0Q77g4F0F8U2XUG6HcsCYyCWGm3TskL3iq+6OQshjx/wD1YqTxmlYc6OAAAAAElFTkSuQmCC"
+            loading="lazy" />
+
         </div>
-    </section>
+        <h3>Photographer</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sequi architecto assumenda aut,
+          necessitatibus eaque earum harum quaerat eveniet animi reprehenderit nulla ipsa rerum fugiat veritatis
+          possimus officiis consectetur quo.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+  </section>
 
 
 
-    <!------skills ------->
+  <!------skills ------->
 
 
-    <section class="skills" id="skills">
-        <div class="main-text" id="skill-text">
-          <h2><span>Skills & </span>Abilities!</h2>
-        </div>
-        
-        <div class="content-wrapper">
-          <!-- Skills Section -->
-          <div class="skilldiv">
-            <div class="skills-section">
-              <div class="skill">
-                <img src="/Images/HTML.png" alt="HTML" loading="lazy">
-                <p>HTML5</p>
-              </div>
-              <div class="skill">
-                <img src="/Images/css.png" alt="CSS" loading="lazy">
-                <p>CSS3</p>
-              </div>
-              <div class="skill">
-                <img src="/Images/JavaScript.png" alt="JavaScript" loading="lazy">
-                <p>JavaScript</p>
-              </div>
-              <div class="skill">
-                <img src="/Images/Java.png" alt="java" loading="lazy">
-                <p>Java</p>
-              </div>
-            </div>
-      
-            <div class="skills-section">
-              <div class="skill">
-                <img src="/Images/DSA.png" alt="DSA" loading="lazy">
-                <p>DSA</p>
-              </div>
-              <div class="skill">
-                <img src="/Images/OOPs.png" alt="OOPs" loading="lazy">
-                <p>OOPs</p>
-              </div>
-              <div class="skill">
-                <img src="/Images/C++2.png" alt="C++" loading="lazy">
-                <p>C++</p>
-              </div>
-              <div class="skill">
-                <img src="/Images/SpringBoot.png" alt="Git VCS" loading="lazy">
-                <p>Spring boot</p>
-              </div>
-            </div>
-      
-            <div class="skills-section">
-              <div class="skill">
-                <img src="/Images/Excell.png" alt="Excel" loading="lazy">
-                <p>Microsoft Excel</p>
-              </div>
-              <div class="skill">
-                <img src="/Images/Word.png" alt="Word" loading="lazy">
-                <p>Microsoft Word</p>
-              </div>
-              <div class="skill">
-                <img src="/Images/PowerPoint.png" alt="PowerPoint" loading="lazy">
-                <p> PowerPoint</p>
-              </div>
-              <div class="skill">
-                <img src="/Images/Picsart.png" alt="Picsart" loading="lazy">
-                <p>Picsart</p>
-              </div>
-            </div>
-      
-            <div class="skills-section">
-              <div class="skill">
-                <img src="/Images/MySQL2.png" alt="MySQL" loading="lazy">
-                <p>My SQL</p>
-              </div>
-              <div class="skill">
-                <img src="/Images/Chatgpt.png" alt="Chatgpt" loading="lazy">
-                <p>Chat Gpt</p>
-              </div>
-              <div class="skill">
-                <img src="/Images/netlify.png" alt="Netlify" loading="lazy">
-                <p>Netlify</p>
-              </div>
-              <div class="skill">
-                <img src="/Images/PowerPoint.png" alt="PowerPoint" loading="lazy">
-                <p>PowerPoint</p>
-              </div>
-            </div>
-      
-            <div class="skills-section">
-              <div class="skill">
-                <img src="/Images/Clang.png" alt="HTML" loading="lazy">
-                <p>C Language</p>
-              </div>
-              <div class="skill">
-                <img src="/Images/Github2.png" alt="Github" loading="lazy">
-                <p>Github</p>
-              </div>
-              <div class="skill">
-                <img src="/Images/wordpress-logo-wordpress-icon-transparent-png-free-vector-removebg-preview.png" alt="WordPress" loading="lazy">
-                <p>WordPress</p>
-              </div>
-              <div class="skill">
-                <img src="/Images/postman.png" alt="postman" loading="lazy">
-                <p>Postman APIs</p>
-              </div>
-            </div>
+  <section class="skills" id="skills">
+    <div class="main-text" id="skill-text">
+      <h2><span>Skills & </span>Abilities!</h2>
+    </div>
+
+    <div class="content-wrapper">
+      <!-- Skills Section -->
+      <div class="skilldiv">
+        <div class="skills-section">
+          <div class="skill">
+            <img src="/Images/HTML.png" alt="HTML" loading="lazy">
+            <p>HTML5</p>
           </div>
-      
-          <!-- LeetCode Heatmap Section -->
-          <div class="leetcodeimg">
-            <h1>My <span style="color: orange;">LeetCode</span> Progress</h1>
-            <div class="heatmap">
-              <!-- Embedding the LeetCode heatmap image -->
-              <img src="https://leetcard.jacoblin.cool/soumyajit_2005?ext=heatmap" alt="LeetCode Activity Heatmap">
-            </div>
-            <p></p>
-
-            <div class="leetcodeimg">
-              <h1>My <span style="color: rgb(5, 191, 5);">GeeksForGeeks</span> Progress</h1>
-              <div class="heatmapgfg">
-                <!-- Embedding the LeetCode heatmap image -->
-                <img src="https://gfgstatscard.vercel.app/banerjeesouw8m3" alt="GFG stats" />
-              </div>
-              <p></p>
-
+          <div class="skill">
+            <img src="/Images/css.png" alt="CSS" loading="lazy">
+            <p>CSS3</p>
           </div>
-
-          
-
-          
-        </div>
-      </section>
-      
-    <!----Education---->
-    <section class="Education" id="education">
-
-        <div class="main-text" id="skill-text">
-            <h2><span>My </span>Education!</h2>
+          <div class="skill">
+            <img src="/Images/JavaScript.png" alt="JavaScript" loading="lazy">
+            <p>JavaScript</p>
+          </div>
+          <div class="skill">
+            <img src="/Images/Java.png" alt="java" loading="lazy">
+            <p>Java</p>
+          </div>
         </div>
 
-        <div class="education-section">
-            <div class="edu">
-                <img src="/Images/Hithaldia.jpg" alt="HIT" loading="lazy" >
-                <h2>Bachelor of Technology in Information Technology and Engineering</h2>
-                <p>Haldia Institute of Technology</p>
-                <p>2024-2027 | Pursuing</p>
-                <!-- <a href="#" class="btn" id="marksheet">Marksheet</a> -->
-            </div>
-            <div class="edu">
-                <img src="/Images/deulia-hiraram-high-school-deulia-midnapore-schools-333eh9dbw7.avif" alt="DHHS" loading="lazy" >
-                <h2>Higher Secondary | Science</h2>
-                <p>Deulia Hiraram High School | West Bengal Board</p>
-                <p>2021-2023 | Completed</p>
-                <!-- <a href="#" class="btn" id="marksheet">Marksheet</a> -->
-            </div>
+        <div class="skills-section">
+          <div class="skill">
+            <img src="/Images/DSA.png" alt="DSA" loading="lazy">
+            <p>DSA</p>
+          </div>
+          <div class="skill">
+            <img src="/Images/OOPs.png" alt="OOPs" loading="lazy">
+            <p>OOPs</p>
+          </div>
+          <div class="skill">
+            <img src="/Images/C++2.png" alt="C++" loading="lazy">
+            <p>C++</p>
+          </div>
+          <div class="skill">
+            <img src="/Images/SpringBoot.png" alt="Git VCS" loading="lazy">
+            <p>Spring boot</p>
+          </div>
         </div>
 
-    </section>
-
-    <!----Projects Sections ----->
-    <section class="portfolio" id="project">
-        <div class="main-text">
-            <h2><span>Latest </span>Projects</h2>
+        <div class="skills-section">
+          <div class="skill">
+            <img src="/Images/Excell.png" alt="Excel" loading="lazy">
+            <p>Microsoft Excel</p>
+          </div>
+          <div class="skill">
+            <img src="/Images/Word.png" alt="Word" loading="lazy">
+            <p>Microsoft Word</p>
+          </div>
+          <div class="skill">
+            <img src="/Images/PowerPoint.png" alt="PowerPoint" loading="lazy">
+            <p> PowerPoint</p>
+          </div>
+          <div class="skill">
+            <img src="/Images/Picsart.png" alt="Picsart" loading="lazy">
+            <p>Picsart</p>
+          </div>
         </div>
-        <div class="portfolio-content">
-            <div class="row">
-                <img src="Images/mentorwb.jpeg" alt="" loading="lazy" >
-                <div class="layer">
-                    <h5>Mentoring Website</h5>
-                    <p>Check out</p>
-                    <a href="https://mentorconnect2024.netlify.app/" target="_main"><i class='bx bx-link-external'></i></a>
-                    <p>Repository</p>
-                    <a href="https://github.com/leo-soumyajit/SIH2024-Mentoring-Website "target="_main"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <img src="Images/netflixpic.jpg" alt="" loading="lazy" >
-                <div class="layer">
-                    <h5>Netflix Login Page</h5>
-                    <p>Check out</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <img src="Images/Zomato.jpg" alt="" loading="lazy" >
-                <div class="layer">
-                    <h5>Zomato Landing Page</h5>
-                    <p>Repository</p>
-                    <a href="https://github.com/leo-soumyajit/Zomato-UI"target="_main"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <img src="Images/Amazon4.jpg" alt="" loading="lazy" >
-                <div class="layer">
-                    <h5>Amazon-Webclone Login Page</h5>
-                    <p>Repository</p>
-                    <a href="https://github.com/leo-soumyajit/Amazon-UI"target="_main"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <!-- <div class="row">
+
+        <div class="skills-section">
+          <div class="skill">
+            <img src="/Images/MySQL2.png" alt="MySQL" loading="lazy">
+            <p>My SQL</p>
+          </div>
+          <div class="skill">
+            <img src="/Images/Chatgpt.png" alt="Chatgpt" loading="lazy">
+            <p>Chat Gpt</p>
+          </div>
+          <div class="skill">
+            <img src="/Images/netlify.png" alt="Netlify" loading="lazy">
+            <p>Netlify</p>
+          </div>
+          <div class="skill">
+            <img src="/Images/PowerPoint.png" alt="PowerPoint" loading="lazy">
+            <p>PowerPoint</p>
+          </div>
+        </div>
+
+        <div class="skills-section">
+          <div class="skill">
+            <img src="/Images/Clang.png" alt="HTML" loading="lazy">
+            <p>C Language</p>
+          </div>
+          <div class="skill">
+            <img src="/Images/Github2.png" alt="Github" loading="lazy">
+            <p>Github</p>
+          </div>
+          <div class="skill">
+            <img src="/Images/wordpress-logo-wordpress-icon-transparent-png-free-vector-removebg-preview.png"
+              alt="WordPress" loading="lazy">
+            <p>WordPress</p>
+          </div>
+          <div class="skill">
+            <img src="/Images/postman.png" alt="postman" loading="lazy">
+            <p>Postman APIs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LeetCode Heatmap Section -->
+      <div class="leetcodeimg">
+        <h1>My <span style="color: orange;">LeetCode</span> Progress</h1>
+        <div class="heatmap">
+          <!-- Embedding the LeetCode heatmap image -->
+          <img src="https://leetcard.jacoblin.cool/soumyajit_2005?ext=heatmap" alt="LeetCode Activity Heatmap">
+        </div>
+        <p></p>
+
+        <div class="leetcodeimg">
+          <h1>My <span style="color: rgb(5, 191, 5);">GeeksForGeeks</span> Progress</h1>
+          <div class="heatmapgfg">
+            <!-- Embedding the LeetCode heatmap image -->
+            <img src="https://gfgstatscard.vercel.app/banerjeesouw8m3" alt="GFG stats" />
+          </div>
+          <p></p>
+
+        </div>
+
+
+
+
+      </div>
+  </section>
+
+  <!----Education---->
+  <section class="Education" id="education">
+
+    <div class="main-text" id="skill-text">
+      <h2><span>My </span>Education!</h2>
+    </div>
+
+    <div class="education-section">
+      <div class="edu">
+        <img src="/Images/Hithaldia.jpg" alt="HIT" loading="lazy">
+        <h2>Bachelor of Technology in Information Technology and Engineering</h2>
+        <p>Haldia Institute of Technology</p>
+        <p>2024-2027 | Pursuing</p>
+        <!-- <a href="#" class="btn" id="marksheet">Marksheet</a> -->
+      </div>
+      <div class="edu">
+        <img src="/Images/deulia-hiraram-high-school-deulia-midnapore-schools-333eh9dbw7.avif" alt="DHHS"
+          loading="lazy">
+        <h2>Higher Secondary | Science</h2>
+        <p>Deulia Hiraram High School | West Bengal Board</p>
+        <p>2021-2023 | Completed</p>
+        <!-- <a href="#" class="btn" id="marksheet">Marksheet</a> -->
+      </div>
+    </div>
+
+  </section>
+
+  <!----Projects Sections ----->
+  <section class="portfolio" id="project">
+    <div class="main-text">
+      <h2><span>Latest </span>Projects</h2>
+    </div>
+    <div class="portfolio-content">
+      <div class="row">
+        <img src="Images/mentorwb.jpeg" alt="" loading="lazy">
+        <div class="layer">
+          <h5>Mentoring Website</h5>
+          <p>Check out</p>
+          <a href="https://mentorconnect2024.netlify.app/" target="_main"><i class='bx bx-link-external'></i></a>
+          <p>Repository</p>
+          <a href="https://github.com/leo-soumyajit/SIH2024-Mentoring-Website " target="_main"><i
+              class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <img src="Images/netflixpic.jpg" alt="" loading="lazy">
+        <div class="layer">
+          <h5>Netflix Login Page</h5>
+          <p>Check out</p>
+          <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <img src="Images/Zomato.jpg" alt="" loading="lazy">
+        <div class="layer">
+          <h5>Zomato Landing Page</h5>
+          <p>Repository</p>
+          <a href="https://github.com/leo-soumyajit/Zomato-UI" target="_main"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <img src="Images/Amazon4.jpg" alt="" loading="lazy">
+        <div class="layer">
+          <h5>Amazon-Webclone Login Page</h5>
+          <p>Repository</p>
+          <a href="https://github.com/leo-soumyajit/Amazon-UI" target="_main"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <!-- <div class="row">
                 <img src="Images/Cafe2.jpg" alt="" loading="lazy" >
                 <div class="layer">
                     <h5>Cafe UI Design</h5>
@@ -339,93 +396,103 @@
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div> -->
-        </div>
-    </section>
-    <!----contact section---->
-    <section class="contact" id="contact">
-        <div class="contact-text">
-            <h2> Get in<span> Touch!</span></h2>
-            <h4>If you have any quiries.</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad sequi vitae illo impedit quod saepe maiores ratione blanditiis iste totam fugiat dolorum repellendus, magnam consequatur perspiciatis culpa, optio quo ipsa.</p>
-            <div class="list">
-                <li><a href="#">+91 790-828-8829</a></li>
-                <li><a href="#">banerjeesoumyajit2005@gmail.com</a></li>
-                <li><a href="#"></a></li>
-            </div>
-            <div class="contact-icons">
-                <a href="https://www.facebook.com/mr.soumyajit.2005?mibextid=qi2Omg&rdid=sro3npS5sy0YK1sW&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F2iqZkFSvRcpdgCTw%2F%3Fmibextid%3Dqi2Omg" target="_main"><i class='bx bxl-facebook' id="facebook"></i></a>
-                <a href="https://www.instagram.com/leo_soumyajit?igsh=N3IxcW05ejdwanE1" target="_main"><i class='bx bxl-instagram-alt' id="instagram"></i></a>
-                <a href="https://wa.me/7908288829" target="_main"><i class='bx bxl-whatsapp' id="whatsapp"></i></a>
-                <a href="https://t.me/Kanutitu" target="_main"><i class='bx bxl-telegram' id="telegram"></i></a>
-            </div>
-        </div>
-        <div class="contact-form">
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="c0fdb95b-0108-4f03-8f53-b4d7cafc526f">
-                <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
-                <input type="hidden" name="from_name" value="My Website" />
+    </div>
+  </section>
+  <!----contact section---->
+  <section class="contact" id="contact">
+    <div class="contact-text">
+      <h2> Get in<span> Touch!</span></h2>
+      <h4>If you have any quiries.</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad sequi vitae illo impedit quod saepe maiores
+        ratione blanditiis iste totam fugiat dolorum repellendus, magnam consequatur perspiciatis culpa, optio quo ipsa.
+      </p>
+      <div class="list">
+        <li><a href="#">+91 790-828-8829</a></li>
+        <li><a href="#">banerjeesoumyajit2005@gmail.com</a></li>
+        <li><a href="#"></a></li>
+      </div>
+      <div class="contact-icons">
+        <a href="https://www.facebook.com/mr.soumyajit.2005?mibextid=qi2Omg&rdid=sro3npS5sy0YK1sW&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F2iqZkFSvRcpdgCTw%2F%3Fmibextid%3Dqi2Omg"
+          target="_main"><i class='bx bxl-facebook' id="facebook"></i></a>
+        <a href="https://www.instagram.com/leo_soumyajit?igsh=N3IxcW05ejdwanE1" target="_main"><i
+            class='bx bxl-instagram-alt' id="instagram"></i></a>
+        <a href="https://wa.me/7908288829" target="_main"><i class='bx bxl-whatsapp' id="whatsapp"></i></a>
+        <a href="https://t.me/Kanutitu" target="_main"><i class='bx bxl-telegram' id="telegram"></i></a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="c0fdb95b-0108-4f03-8f53-b4d7cafc526f">
+        <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+        <input type="hidden" name="from_name" value="My Website" />
 
 
-                <input type="text" name="name" placeholder="Your Name " required>
-                <input type="text" name="email" placeholder="Your Email " required>
-                <input type="number" placeholder="Your Mobile Number " required>
-                <textarea name="message" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
-                <input type="submit" value="Send Message" class="submit" required >
-                <!-- <button type="submit" class="submit" required>
+        <input type="text" name="name" placeholder="Your Name " required>
+        <input type="text" name="email" placeholder="Your Email " required>
+        <input type="number" placeholder="Your Mobile Number " required>
+        <textarea name="message" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
+        <input type="submit" value="Send Message" class="submit" required>
+        <!-- <button type="submit" class="submit" required>
                     <i class="fa fa-paper-plane"></i> Send Message
                 </button> -->
-                
-            </form>
-        </div>
-    </section>
+
+      </form>
+    </div>
+  </section>
 
 
-    <footer class="footer">
-        <div class="footer-container">
-            <!-- About Section -->
-            <div class="footer-about">
-                <h3>About Me</h3>
-                <p>I am a passionate web developer with a focus on creating beautiful and functional websites. Let's connect!</p>
-            </div>
-    
-            <!-- Quick Links Section -->
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#skills">Skills & Abilities</a></li>
-                    <li><a href="#education">My Education</a></li>
-                    <li><a href="#project">Latest Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-    
-            <!-- Contact and Social Media Section -->
-            <div class="footer-contact">
-                <h3>Contact Info</h3>
-                <p>&#9993; <a href="banerjeesoumyajit@google.com">banerjeesoumyajit@google.com</a></p>
-                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-                  </svg> +91 790-828-8829</p>
-                <p><i class="fa-solid fa-location-dot"></i> Purba Medinipur, India-721154</p>
-                <!-- Social media icons placed under the contact info -->
-                <div class="contact-icons">
-                    <a href="https://www.facebook.com/mr.soumyajit.2005?mibextid=qi2Omg&rdid=sro3npS5sy0YK1sW&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F2iqZkFSvRcpdgCTw%2F%3Fmibextid%3Dqi2Omg" target="_main"><i class='bx bxl-facebook' id="facebook"></i></a>
-                    <a href="https://www.instagram.com/leo_soumyajit?igsh=N3IxcW05ejdwanE1" target="_main"><i class='bx bxl-instagram-alt' id="instagram"></i></a>
-                    <a href="https://wa.me/7908288829" target="_main"><i class='bx bxl-whatsapp' id="whatsapp"></i></a>
-                    <a href="https://t.me/Kanutitu" target="_main"><i class='bx bxl-telegram' id="telegram"></i></a>
-                </div>
-            </div>
-        </div>
-        <hr style="width: 100%; height: 1px; border: none; background-color: #bcb7b7b0;">
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- About Section -->
+      <div class="footer-about">
+        <h3>About Me</h3>
+        <p>I am a passionate web developer with a focus on creating beautiful and functional websites. Let's connect!
+        </p>
+      </div>
 
-        <div class="footer-bottom">
-            <p>&copy; 2024 &#10084; Soumyajit Banerjee. All Rights Reserved.</p>
+      <!-- Quick Links Section -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills & Abilities</a></li>
+          <li><a href="#education">My Education</a></li>
+          <li><a href="#project">Latest Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact and Social Media Section -->
+      <div class="footer-contact">
+        <h3>Contact Info</h3>
+        <p>&#9993; <a href="banerjeesoumyajit@google.com">banerjeesoumyajit@google.com</a></p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+          </svg> +91 790-828-8829</p>
+        <p><i class="fa-solid fa-location-dot"></i> Purba Medinipur, India-721154</p>
+        <!-- Social media icons placed under the contact info -->
+        <div class="contact-icons">
+          <a href="https://www.facebook.com/mr.soumyajit.2005?mibextid=qi2Omg&rdid=sro3npS5sy0YK1sW&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F2iqZkFSvRcpdgCTw%2F%3Fmibextid%3Dqi2Omg"
+            target="_main"><i class='bx bxl-facebook' id="facebook"></i></a>
+          <a href="https://www.instagram.com/leo_soumyajit?igsh=N3IxcW05ejdwanE1" target="_main"><i
+              class='bx bxl-instagram-alt' id="instagram"></i></a>
+          <a href="https://wa.me/7908288829" target="_main"><i class='bx bxl-whatsapp' id="whatsapp"></i></a>
+          <a href="https://t.me/Kanutitu" target="_main"><i class='bx bxl-telegram' id="telegram"></i></a>
         </div>
-    </footer>
-    
-    
+      </div>
+    </div>
+    <hr style="width: 100%; height: 1px; border: none; background-color: #bcb7b7b0;">
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 &#10084; Soumyajit Banerjee. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
 </body>
+
 </html>
