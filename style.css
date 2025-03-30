@@ -903,7 +903,7 @@ section{
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.273), #ffae0083);
+    background: linear-gradient(rgba(0, 0, 0, 0.767), #1b170c68);
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -923,14 +923,14 @@ section{
 }
 
 .layer p {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 251, 0);
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.8;
     transition: text-shadow 0.3s ease-in-out; /* Smooth transition for the glow */
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* Light glow */
-                 0 0 20px rgba(255, 255, 255, 0.8), /* Medium glow */
-                 0 0 30px rgb(255, 255, 255);   /* Strong glow */
+    text-shadow: 0 0 10px rgba(242, 238, 3, 0.815), /* Light glow */
+                 0 0 20px rgba(246, 255, 0, 0.551), /* Medium glow */
+                 0 0 30px rgba(255, 255, 255, 0);   /* Strong glow */
 }
 
 .layer p:hover {
