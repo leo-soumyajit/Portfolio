@@ -1262,3 +1262,126 @@ margin-right: 15px;
     margin-top: 20px;
     font-size: 14px;
 }
+
+.about-text h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 3rem; /* Adjust foreground size as needed */
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 1;
+  }
+  
+  .about-text h2::before {
+    content: "ABOUT ME!"; /* Background text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem; /* Adjust background size as needed */
+    color: #000; /* Base color; adjust as required */
+    opacity: 0.25; /* Faint background */
+    white-space: nowrap; /* Prevent line breaks */
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+  }
+  
+  .services h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 3rem; /* Adjust foreground size as needed */
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 1;
+  }
+  
+  .services h2::before {
+    content: "MY SERVICES"; /* Background text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem; /* Adjust background size as needed */
+    color: #000; /* Base color; adjust as required */
+    opacity: 0.25; /* Faint background */
+    white-space: nowrap; /* Prevent line breaks */
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+  }
+
+
+
+  .skills h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 3rem; /* Adjust foreground size as needed */
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 1;
+  }
+  
+  .skills h2::before {
+    content: "SKILLS & ABILITIES"; /* Background text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem; /* Adjust background size as needed */
+    color: #000; /* Base color; adjust as required */
+    opacity: 0.25; /* Faint background */
+    white-space: nowrap; /* Prevent line breaks */
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+  }
+
+
+  #skill-text h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 3rem; /* Adjust foreground size as needed */
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 1;
+  }
+  
+  #skill-text h2::before {
+    content: "MY EDUCATION"; /* Background text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem; /* Adjust background size as needed */
+    color: #000; /* Base color; adjust as required */
+    opacity: 0.25; /* Faint background */
+    white-space: nowrap; /* Prevent line breaks */
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .portfolio h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 3rem; /* Adjust foreground size as needed */
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 1;
+  }
+  
+  .portfolio h2::before {
+    content: "LATEST PROJECTS"; /* Background text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem; /* Adjust background size as needed */
+    color: #000; /* Base color; adjust as required */
+    opacity: 0.25; /* Faint background */
+    white-space: nowrap; /* Prevent line breaks */
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+  }
