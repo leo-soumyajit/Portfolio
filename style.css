@@ -1385,3 +1385,248 @@ margin-right: 15px;
     pointer-events: none;
     user-select: none;
   }
+
+
+
+/* media quiry */
+
+@media screen and (max-width: 768px) {
+    /* ---------- Hide Navigation Bar ---------- */
+    nav {
+      display: none;
+    }
+    
+    /* ---------- General Section Padding ---------- */
+    section {
+      padding: 80px 5% 60px;
+    }
+    
+    /* ---------- Home Section ---------- */
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 50px 20px;
+      }
+    
+      .home-text {
+        width: 100%;
+        order: 1;
+      }
+    
+      .button {
+        order: 2;
+        margin: 15px 0;
+      }
+    
+      .social-icon {
+        order: 3;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+      }
+    
+      .profile-picture {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px; /* Center it */
+    }
+
+    .profile-picture img {
+        width: 260px;
+        height: 260px;
+        object-fit: cover; /* Ensures the image fills the space properly */
+        object-position: center; /* Centers the face in the image */
+        border-radius: 50%; /* Keeps it circular */
+    }
+    
+    
+    /* ---------- About Section ---------- */
+    .about {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 20px;
+    }
+    .about-img img {
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+    }
+    .about-text {
+      padding: 0 10px;
+    }
+    .about-text h2 {
+      font-size: 2rem;
+    }
+    .about-text h2::before {
+      font-size: 3rem;
+    }
+    .about-text h4 {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+    .about-text p {
+      font-size: 0.9rem;
+    }
+    
+    /* ---------- Education Section ---------- */
+    .education-section {
+      flex-direction: column;
+      padding: 20px;
+    }
+    .edu {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .edu img {
+      height: auto;
+    }
+    
+    /* ---------- Portfolio Section ---------- */
+    .portfolio-content {
+      grid-template-columns: 1fr;
+      margin: 20px 5%;
+      gap: 20px;
+    }
+    .row img {
+      height: auto;
+    }
+    .layer h5 {
+      font-size: 1.2rem;
+    }
+    .layer p {
+      font-size: 0.9rem;
+    }
+    
+    /* ---------- Services Section ---------- */
+    .services h2 {
+      font-size: 2rem;
+    }
+    .services h2::before {
+      font-size: 3rem;
+    }
+    
+    /* ---------- Skills Section ---------- */
+    .skills-section {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Exactly 4 skill cards per row */
+      gap: 10px;
+      padding: 20px 5%;
+      justify-items: center;
+    }
+    .skill {
+      width: 100%;
+      max-width: 150px;
+      padding: 10px;
+      background-color: #20211c;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .skill:hover {
+      transform: scale(1.05);
+    }
+    .skill img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .skill p {
+      font-size: 14px;
+      margin: 0;
+      color: #ffffff;
+    }
+    /* Optionally adjust the Skills heading */
+    .skills h2 {
+      font-size: 24px;
+    }
+    .skills h2::before {
+      font-size: 32px;
+    }
+    
+    /* ---------- Contact Section ---------- */
+    .contact {
+      grid-template-columns: 1fr;
+      padding: 20px 5%;
+      text-align: center;
+    }
+    .contact-text h2 {
+      font-size: 2rem;
+    }
+    .contact-text h4 {
+      font-size: 1.2rem;
+    }
+    .contact-text p {
+      font-size: 0.9rem;
+    }
+    .contact-form form input,
+    .contact-form form textarea {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+    .contact-form .submit {
+      width: 100%;
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+    
+    /* ---------- Footer ---------- */
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 0 5%;
+    }
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+      margin: 10px 0;
+      min-width: 100%;
+    }
+    .footer-about h3,
+    .footer-links h3,
+    .footer-contact h3 {
+      font-size: 1.2rem;
+    }
+    .footer-bottom {
+      font-size: 0.8rem;
+    }
+    
+    /* ---------- Buttons ---------- */
+    .btn {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+    
+    /* ---------- Text Animation ---------- */
+    .wrapper .static-txt,
+    .wrapper .dynamic-txts,
+    .dynamic-txts li {
+      font-size: 1.2rem;
+    }
+    
+    /* ---------- Adjust Heading Pseudo-Elements (Background Text) ---------- */
+    .about-text h2::before,
+    .services h2::before,
+    .skills h2::before,
+    #skill-text h2::before,
+    .portfolio h2::before {
+      font-size: 2.5rem;
+    }
+    .about-text h2,
+    .services h2,
+    .skills h2,
+    #skill-text h2,
+    .portfolio h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  
+  
