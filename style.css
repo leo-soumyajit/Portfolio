@@ -1437,8 +1437,8 @@ margin-right: 15px;
     }
 
     .profile-picture img {
-        width: 260px;
-        height: 260px;
+        width: auto;
+        height: auto;
         object-fit: cover; /* Ensures the image fills the space properly */
         object-position: center; /* Centers the face in the image */
         border-radius: 50%; /* Keeps it circular */
