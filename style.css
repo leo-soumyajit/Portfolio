@@ -1629,4 +1629,84 @@ margin-right: 15px;
   }
   
   
+  .certificates-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+  }
   
+  /* .certificates-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-left: 5px solid #00ffd1;
+    padding-left: 10px;
+    color: #00ffd1;
+  } */
+  
+  .cert-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  
+  .cert-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 255, 209, 0.2);
+  }
+  
+  .cert-img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #444;
+    margin-bottom: 10px;
+  }
+  
+  .cert-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .cert-issuer {
+    font-size: 0.95em;
+    color: #999;
+  }
+  
+  .cert-date {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 4px;
+  }
+
+  .certificates-section h2::before {
+    content: "LICENSES & CERTIFICATION"; /* Background text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem; /* Adjust background size as needed */
+    color: #000; /* Base color; adjust as required */
+    opacity: 0.25; /* Faint background */
+    white-space: nowrap; /* Prevent line breaks */
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .certificates-section h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 3rem; /* Adjust foreground size as needed */
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 1;
+  }
