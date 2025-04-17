@@ -34,6 +34,9 @@
           <a href="#skills">Skill</a>
         </li>
         <li>
+          <a href="#certificates">Certificate</a>
+        </li>
+        <li>
           <a href="#education">Education</a>
         </li>
         <li>
@@ -323,7 +326,7 @@
   </section>
 
 
-  <section class="certificates-section">
+  <section class="certificates-section" id="certificates">
     <div class="main-text" id="Certificate">
       <h2>Licenses<span> & Certifications</span></h2>
     </div>
@@ -332,32 +335,37 @@
       <div class="cert-card">
         <img src="certificates/springboot0-1.png" alt="Certificate 1" class="cert-img">
         <div class="cert-title">Spring Boot 0 To 1 - Fundamentals</div>
+        <span class="eye-icon" onclick="openModal('certificates/springboot0-1.png')">&#128065;</span>
         <div class="cert-issuer">Coding Shuttle</div>
         <div class="cert-date">Issued: February 22, 2025</div>
       </div>
 
       <div class="cert-card">
         <img src="certificates/HTMLCSS0toHero.png" alt="Certificate 2" class="cert-img">
-        <div class="cert-title">JavaScript Algorithms & Data Structures</div>
+        <div class="cert-title">HTML & CSS Zero to Hero in 3 Days</div>
+        <span class="eye-icon" onclick="openModal('certificates/HTMLCSS0toHero.png')">&#128065;</span>
         <div class="cert-issuer">Coursera</div>
         <div class="cert-date">Issued: Tue 14th May 2024</div>
       </div>
 
       <div class="cert-card">
         <img src="certificates/Java.png" alt="Certificate 2" class="cert-img">
+        <span class="eye-icon" onclick="openModal('certificates/Java.png')">&#128065;</span>
         <div class="cert-title">Java Bootcamp</div>
         <div class="cert-issuer">LetsUpgrade</div>
         <div class="cert-date">Issued: Wed 22nd May 2024</div>
       </div>
 
       <div class="cert-card">
-        <img src="certificates/tarugardenCloudComputing.jpg" alt="Certificate 2" class="cert-img">
-        <div class="cert-title">Briding The Gap 2.0 Cloud Computing</div>
-        <div class="cert-issuer">TaruGuardians</div>
-        <div class="cert-date">Issued: May 2024</div>
+        <img src="certificates/Python.jpg" alt="Certificate 2" class="cert-img">
+        <span class="eye-icon" onclick="openModal('certificates/Python.jpg')">&#128065;</span>
+        <div class="cert-title">Introduction to Python: Fundamentals</div>
+        <div class="cert-issuer">Microsoft</div>
+        <div class="cert-date">Issued: January 2025</div>
       </div>
       <div class="cert-card">
         <img src="certificates/Agile.png" alt="Certificate 2" class="cert-img">
+        <span class="eye-icon" onclick="openModal('certificates/Agile.png')">&#128065;</span>
         <div class="cert-title">Software Engineering and Agile software development
         </div>
         <div class="cert-issuer">Infosys SpringBoard</div>
@@ -365,6 +373,7 @@
       </div>
       <div class="cert-card">
         <img src="certificates/devopsFoundationCource.png" alt="Certificate 2" class="cert-img">
+        <span class="eye-icon" onclick="openModal('certificates/devopsFoundationCource.png')">&#128065;</span>
         <div class="cert-title">DevOps Foundation Certification
         </div>
         <div class="cert-issuer">Infosys SpringBoard</div>
@@ -372,6 +381,13 @@
       </div>
 
       <!-- Add more cert-card blocks here -->
+
+
+<!-- Modal -->
+<div id="cert-modal" class="modal" onclick="closeModal()">
+  <span class="close-btn" onclick="closeModal()">✖</span>
+  <img id="modal-img" class="modal-content" alt="Full Certificate">
+</div>
 
     </div>
   </section>
@@ -570,6 +586,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
   <script src="script.js"></script>
+  <script>
+    function openModal(imageSrc) {
+      const modal = document.getElementById('cert-modal');
+      const modalImg = document.getElementById('modal-img');
+      modal.style.display = "block";
+      modalImg.src = imageSrc;
+    }
+  
+    function closeModal() {
+      const modal = document.getElementById('cert-modal');
+      modal.style.display = "none";
+    }
+  </script>
+  
 
 </body>
 
