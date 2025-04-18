@@ -1635,6 +1635,8 @@ margin-right: 15px;
   
   .certificates-section {
     
+    /* margin: 10;
+    padding: auto; */
    
   }
   
@@ -1729,6 +1731,8 @@ margin-right: 15px;
     border-radius: 50%;
     color: #00ffd1;
     transition: background 0.3s;
+    opacity: 0; /* Hidden by default */
+    pointer-events: none; /* Prevent click when not visible */
   }
   
   .eye-icon:hover {
@@ -1771,5 +1775,27 @@ margin-right: 15px;
   
   .close-btn:hover {
     color: #00ffd1;
+  }
+  .image-wrapper {
+    position: relative;
+  }
+
+  /* .eye-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 6px;
+    border-radius: 50%;
+    color: #00ffd1;
+    transition: background 0.3s, opacity 0.3s ease;
+    
+  } */
+  
+  .image-wrapper:hover .eye-icon {
+    opacity: 1; /* Show on hover */
+    pointer-events: auto;
   }
   
